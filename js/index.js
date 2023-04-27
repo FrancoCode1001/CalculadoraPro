@@ -8,43 +8,35 @@ function onDeviceReady() {
     document.getElementById('deviceready').classList.add('ready');
 }
 
-window.onload = mostrar;
+window.onload = constructor;
 
-function mostrar(){
-    var btnSum = document.getElementById('btnSum');
-    var btnRes = document.getElementById('btnRes');
-    var btnMul = document.getElementById('btnMul');
-    var btnDiv = document.getElementById('btnDiv');
-    btnSum.addEventListener('click', sumar);
-    btnRes.addEventListener('click', restar);
-    btnMul.addEventListener('click', multiplicar);
-    btnDiv.addEventListener('click', dividir);    
+function constructor(){
+    let sumar = document.getElementById('eSUMAR');
+    let restar = document.getElementById('eRESTAR');
+    let multiplicar = document.getElementById('eMULTIPLICAR');
+    let dividir = document.getElementById('eDIVIDIR');
+    sumar.addEventListener('click', esumar);
+    restar.addEventListener('click', erestar);
+    multiplicar.addEventListener('click', emultiplicar);
+    dividir.addEventListener('click', edividir);
 }
-function sumar(){
-    var num1 = document.getElementById('num1').value;
-    var num2 = document.getElementById('num2').value;
-    var resul = parseInt(num1) + parseInt(num2);
-    var resultado = document.getElementById('resultado');
-    resultado.innerHTML=('Resultado: '+resul);
+function esumar(){
+    let V1 = document.getElementById('V1').value;
+    let V2 = document.getElementById('V2').value;
+    document.getElementById('R').value = parseInt(V1) + parseInt(V2);
 }
-function restar(){
-    var num1 = document.getElementById('num1').value;
-    var num2 = document.getElementById('num2').value;
-    var resul = parseInt(num1) - parseInt(num2);
-    var resultado = document.getElementById('resultado');
-    resultado.innerHTML=('Resultado: '+resul);
+function erestar(){
+    let V1 = document.getElementById('V1').value;
+    let V2 = document.getElementById('V2').value;
+    document.getElementById('R').value = parseInt(V1) - parseInt(V2);
 }
-function multiplicar(){
-    var num1 = document.getElementById('num1').value;
-    var num2 = document.getElementById('num2').value;
-    var resul = parseInt(num1) * parseInt(num2);
-    var resultado = document.getElementById('resultado');
-    resultado.innerHTML=('Resultado: '+resul);
+function emultiplicar(){
+    let V1 = document.getElementById('V1').value;
+    let V2 = document.getElementById('V2').value;
+    document.getElementById('R').value = parseInt(V1) * parseInt(V2);
 }
-function dividir(){
-    var num1 = document.getElementById('num1').value;
-    var num2 = document.getElementById('num2').value;
-    var resul = parseInt(num1) / parseInt(num2);
-    var resultado = document.getElementById('resultado');
-    resultado.innerHTML=('Resultado: '+resul);
+function edividir(){
+    let V1 = document.getElementById('V1').value;
+    let V2 = document.getElementById('V2').value;
+    document.getElementById('R').value = parseInt(V1) / parseInt(V2);
 }
