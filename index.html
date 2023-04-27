@@ -1,27 +1,23 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-        <meta name="color-scheme" content="light dark">
-        <link rel="stylesheet" href="css/index.css">
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div>
-            <h1>Operaciones aricmeticas</h1>
-            <input id="num1" type="text" name=""><br>
-            <input id="num2" type="text" name=""><br>
-            <button id="btnSum">+</button>
-            <button id="btnRes">-</button>
-            <button id="btnMul">*</button>
-            <button id="btnDiv">/</button>
-            <p id="resultado"></p>
-        </div>        
-        <script src="cordova.js"></script>
-        <script src="js/index.js"></script>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="aricmetica.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones</title>
+</head>
+<body>
+    <div class="formulario">
+        <h1>OPERACIONES</h1>
+        <input id="V1" type="text" placeholder="Valor 1..."><br>
+        <input id="V2" type="text" placeholder="Valor 2..."><br>
+        <input id="R" type="text" placeholder="Resultado..." disabled><br>
+        <button id="eSUMAR">SUMAR</button><br>
+        <button id="eRESTAR">RESTAR</button><br>
+        <button id="eMULTIPLICAR">MULTIPLICAR</button><br>
+        <button id="eDIVIDIR">DIVIDIR</button>
+    </div>
+</body>
 </html>
