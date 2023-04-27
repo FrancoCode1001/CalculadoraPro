@@ -1,41 +1,31 @@
 body{
-    background-color: #222;
-    text-transform: uppercase;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: #edecec;
 }
-h1{
+.formulario{
+    border: none;
+    text-align: center;
+    width: 10cm;
+    box-shadow: 0 0 12px 1px;
+    background-color: #fff;
+    height: 10cm;
+    margin: 150px auto;
+}
+.formulario h1{
+    line-height: 50px;
+    font-size: 25px;
     text-decoration: underline;
 }
-p{
-    font-size: 20px;
-}
-input{
-    border-radius: 10px;
+.formulario input{
     text-indent: 10px;
-    font-size: 20px;
-    border: none;
-    width: 12cm;
-    height: 1cm;
-    margin: 5px;
-    outline: none;
+    width: 8cm;
+    margin: 7px 0;
+    height: 25px;
 }
-div{
-    text-align: center;
-}
-button{ 
-    cursor: pointer;   
-    font-size: 30px;
-    width: 1cm;
-    margin: 5px 20px;
-    height: 1cm;
-}
-
-/* Landscape layout (with min-width) */
-@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
-    #deviceready.ready .event.listening { display: none; }
-    #deviceready.ready .event.received { display: block; }
-
-@keyframes fade {
-    from { opacity: 1.0; }
-    50% { opacity: 0.4; }
-    to { opacity: 1.0; }
+.formulario button{
+    width: 8.2cm;
+    height: 27px;
+    margin: 5px 0;
 }
